@@ -1,0 +1,49 @@
+TASK 1:
+column names:  timestamp,object_id,temperature,velocity,altitude,signal_strength,sensor_status,anomaly_flag 
+8 COLUMN
+
+TASK 2:
+501 LINES
+500 without header
+
+TASK 3:
+column 2
+OBJ-002, OBJ-004
+16.47, 18.39872479322273 (temperature), 7.61, 7.15 (velocity)
+input: temperature, velocity, altitude, signal_strength, sensor_status
+target variable: anomaly_flag
+
+TASK 4:
+5 object identifiers
+90 OBJ-001, 97 OBJ-002, 100 OBJ-003, 113 OBJ-004, 100 OBJ-005
+
+TASK 5:
+30 invalid values
+appear in the middle
+2026-03-03 02:00:00,OBJ-002,INVALID,7.37,418,0.76,OK,0
+2026-03-03 03:50:00,OBJ-003,INVALID,7.54,571,0.81,OK,0
+2026-03-03 04:25:00,OBJ-003,INVALID,7.05,514,0.9,OK,0
+
+TASK 6:
+minimum value 14.0 (temperature)
+maximum value 20.50841799679463 (temperature)
+minimum value 7.0 (velocity)
+maximum value 8.0 (velocity)
+
+TASK 7:
+441 0 
+59 1
+0 is more frequent
+
+PART 12
+
+TASK P1:
+cut -d ',' -f2 orbital_observations.csv | grep " 1 "
+no one appear once
+
+TASK P2:
+cut -d ',' -f2 orbital_observations.csv | sort | uniq -c
+113 OBJ-004 most frequently
+
+TASK P3:
+GITHUB: https://github.com/ireneferrandez/AI_UBPO_2026_Lab-2.git

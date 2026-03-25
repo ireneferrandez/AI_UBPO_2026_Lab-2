@@ -1,0 +1,49 @@
+Directory structure:
+
+data/raw/observations.csv
+data/processed/
+src/ingestion/load_data.py
+reports/
+
+Dataset:
+
+Total records: 5
+Unique objects: OBJ-001, OBJ-002, OBJ-003, OBJ-004
+
+Object counts:
+
+OBJ-001: 2
+OBJ-002: 1
+OBJ-003: 1
+OBJ-004: 1
+
+Invalid records:
+
+1 detected
+
+Filtering:
+
+Extracted temperature > 15.2
+
+Cleaning:
+
+Removed invalid records using grep
+Clean dataset contains 4 records
+
+Script:
+
+Computes average temperature
+Counts objects
+Detects invalid values
+
+Data flow:
+
+raw → cleaned → processed
+
+Pipeline:
+
+automated with bash script
+
+Repository:
+
+https://github.com/ireneferrandez/AI_UBPO_2026_Lab-1.git
