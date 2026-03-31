@@ -46,4 +46,16 @@ cut -d ',' -f2 orbital_observations.csv | sort | uniq -c
 113 OBJ-004 most frequently
 
 TASK P3:
-GITHUB: https://github.com/ireneferrandez/AI_UBPO_2026_Lab-2.git
+awk -F',' '$3 > 16 && $6 < 0.8' orbital_observations.csv | wc -l
+result: 68
+
+TASK P4: 
+grep -v "OK" orbital_observations.csv | grep ",0$" | wc -l
+result: 45
+
+TASK P5: 
+grep -v "INVALID" orbital_observations.csv | cur -d',' -f3,4,5,6 > ../processed/model_input.csv
+
+GITHUB: 
+https://github.com/ireneferrandez/AI_UBPO_2026_Lab-2.git
+
