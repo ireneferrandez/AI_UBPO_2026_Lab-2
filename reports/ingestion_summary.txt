@@ -1,0 +1,13 @@
+Dataset: orbital_observations
+Records loaded: 501
+Expected records: 500
+Column validation: OK
+Record count validation: MISMATCH
+Valid records: 471
+Invalid records: 30
+Feature validation: OK
+Target validation: OK
+Generated files:
+- /home/student/lab02_ooais_ferrandez/AI_UBPO_2026-Lab-2/ooais-project/data/processed/observations_valid.csv
+- /home/student/lab02_ooais_ferrandez/AI_UBPO_2026-Lab-2/ooais-project/data/processed/observations_invalid.csv
+- /home/student/lab02_ooais_ferrandez/AI_UBPO_2026-Lab-2/ooais-project/data/processed/model_input.csv

@@ -1,0 +1,36 @@
+TASK 1:
+total 40
+-rw-rw-rw- 1 student student   440 mar 31 11:42 metdata.json
+-rw-rw-rw- 1 student student   240 mar 31 11:42 observations.csv
+-rw-rw-rw- 1 student student 28795 mar 31 11:42 orbital_observations.csv
+
+TASK 2:
+Dataset name: orbital_observations
+Number of records:500
+List of columns: timestamp, object_id, temperature, velocity, altitude, signal_strength, sensor_status, anomaly_flag
+Feature columns: temperature, velocity, altitude, signal_strength, sensor_status
+Target column: anomaly_flag
+Number of invalid records: 30
+
+TASK 4:
+Dataset: orbital_observations
+Records loaded: 501
+Columns (dataset): ['timestamp', 'object_id', 'temperature', 'velocity', 'altitude', 'signal_strength', 'sensor_status', 'anomaly_flag']
+Columns (metadata): ['timestamp', 'object_id', 'temperature', 'velocity', 'altitude', 'signal_strength', 'sensor_status', 'anomaly_flag']
+
+TASK 5:
+Column validation: OK
+
+TASK 6:
+Record count: MISMATCH
+Expected: 500
+Actual:   501
+
+TASK 7:
+Valid records: 471
+Invalid records: 30
+
+TASK 8:
+
+
+
